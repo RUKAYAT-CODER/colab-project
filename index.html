@@ -1,108 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <title>Simple Payroll System</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <title>Payroll Home Page</title>
 </head>
-<header>
-    <div class="logo">
-        <img src="/images/Group 1.png" alt="Company logo">
-    </div>
-    <div class="nav-menu">
-        <ul>
-            <li><a href="#home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="index.html">Payroll</a></li>
-            <li><a href="contactus.html">Contact Us</a> </li>
-        </ul>
-    </div>
-</header>
-    
-    <body>
-        <!-- <div><a class="back-to-home" href="homepage.html"><button class="back-to-home">Back to home</button></a></div> -->
-        <h1> Simple Payroll Web Application</h1>
-        <Fieldset>
-            <legend><h2>Form</h2></legend>
-            
-            <form id="form" autocomplete="off">
-                <div class="left">
-                    <label for="">Employee ID</label>
-                    <input type="text" name="employeeid" id="employeeid">
-                </div>
-                <div class="left">
-                    <label for="">Fullname</label>
-                    <input type="text" name="fullname" id="fullname">
-                </div>
-                <div class="left">
-                    <label for="">Department</label>
-                    <input type="text" name="department" id="department">
-                </div>
-                <div style="clear: both;">&nbsp;</div>
-                <div class="left">
-                    <label for="">Address</label>
-                    <input type="text" name="address" id="address">
-                </div>
-                <div class="left">
-                    <label for="">Basic Salary</label>
-                    <input type="number" name="basicsalary" id="basicsalary">
-                </div>
-                <div class="left">
-                    <label for="">Total Allowances</label>
-                    <input type="number" name="totalallowance" id="totalallowance" readonly>
-                </div>
-                <div style="clear: both;">&nbsp;</div>
-                <div class="left">
-                    <label for="">Netpay</label>
-                    <input type="number" name="netpay" id="netpay" readonly>
-                </div>
-                <div class="left">
-                    <label for="">Tax</label>
-                    <input type="number" name="tax" id="tax" readonly>
-                </div>
-                <div class="left">
-                    <label for="">Grosspay</label>
-                    <input type="number" name="grosspay" id="grosspay" readonly>
-                </div>
-                <div style="clear: both;">&nbsp;</div>
-                <div  class="left" class="form-action-button">
-                    <input type="submit" value="Submit" id="submit">
-                    <input type="reset" value="Reset">
-                    <input type="submit" value="Calculate" id="calculate">
-            
-                </div>
-            </form>
-        </Fieldset><br>
-            <div id="msg"></div><br>
+<body>
+    <header>
+        <div class="logo">
+                    <img src="/images/Group 1.png" alt="Company logo">
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="#index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="payrol.html">Payroll</a></li>
+                <li><a href="contactus.html">Contact Us</a> </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h1>Tired of Payroll Headache?</h1>
+        <h2>Lets handle it for you! The smartest way</h2>
+        <p>
+        Our payroll system is designed to simplify the complex and time-consuming task of managing employee payroll and has alot of
+        benefits.<br> With our easy-to-use system, you can manage your payroll and employee information from anywhere, at anytime. </p>
+        
+        
+        <h3>Here are some of the features and benefits of our payroll system:</h3>
+        <div>
+            <img class="body-image" src="/images/staff image.avif" alt="payroll image">
+        </div>
+        
+       <p><strong>Accurate and Timely Payroll Processing:</strong>  Our system ensures that your employees are paid accurately and on time, every
+        time. We handle<br> all aspects of payroll processing, from calculating taxes and deductions to processing direct deposits.</p>
+        <br>
+        <p><strong>Streamlined Time Off Requests:</strong> Our system makes it easy for employees to request time off, and for managers to approve
+        or deny those <br> system tracks employee vacation and sick time, and calculates their available time off based
+        on company policies.</p><br>
+        
+        <p><strong>Centralized Employee Information:</strong> Our system provides a centralized location for employee information, including
+        personal details, contact<br> information, employment status, and job history. This makes it easy to manage your employee
+        information in one place.</p><br>
+        <div class="center-image">
+            <figure>
+                    <img src="/images/two staff.avif" alt="">
+                    <figcaption>Happy Staff</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/staffpayrollimage.jpg" alt="">
+                <figcaption>What we do</figcaption>
+            </figure>
+           
 
-        <fieldset>
-            <legend>
-                <h2>Table: Showing Data from Form</h2>
-            </legend>
-            <table class="" id="table">
-                <thead>
-                    <tr>
-                    <th class="col"> Employee Id</th>
-                    <th class="col"> Fullname</th>
-                    <th class="col"> Department </th>
-                    <th class="col"> Address</th>
-                    <th class="col"> Basic Salary</th>
-                    <th class="col"> Total Allowance</th>
-                    <th class="col"> Netpay</th>
-                    <th class="col"> Tax</th>
-                    <th class="col"> Grosspay</th>
-                    <th class="col">Action </th>
-                </tr>
-                </thead>
-                <tbody id="tbody"></tbody>
-                </table>
-        </fieldset>
-        <!-- &#8592; -->
-    
-    <script src="script.js"></script>
-    </body>
-    
+        </div>
+        
+        <p><strong>Easy Access to Reports:</strong> Our system provides various reports such as payroll reports, time off reports, and employee
+        information reports. <br>You can generate reports based on different parameters such as date range, employee, and
+        department.</p><br>
+        
+        <p> Get Started Today: If you're ready to simplify your payroll system
+            and benefit management, sign up for our system today. Our
+        system is <br>easy to use, secure, and backed by our knowledgeable customer support team. Contact us today to learn more.</p>
+    </main>
+    <footer>
+<div class="footer-nav">
+    <ul>
+        <li><a href="#index.html">Payroll Incoporation</a></li>
+        <li><a href="payrol.html"> Product</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="#help">Help</a></li>
+    </ul>
+</div>
+<hr>
+<p>Our payroll system is designed to simplify the complex and time-consuming task of managing employee payroll and
+benefits.</p>
+<div class="socials1">
+    <img src="/images/facebook.png" class="socials1">
+    <img src="/images/instagram.png" class="socials1">
+    <img src="/images/twitter.png" class="socials1">
+    <img src="/images/youtube.png" class="socials1">
+    <img src="/images/linkdin.png" class="socials1">
+</div>
 
+<span class="copyright">&copy; Copyright 2023 Payroll inc.</span>
+    </footer>
+</body>
 </html>
