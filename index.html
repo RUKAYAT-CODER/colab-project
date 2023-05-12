@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Simple Payroll System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <div class="logo">
+        <img src="/images/Group 1.png" alt="Company logo">
+    </div>
+    <div class="nav-menu">
+        <ul>
+            <li><a href="#home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html">Payroll</a></li>
+            <li><a href="contactus.html">Contact Us</a> </li>
+        </ul>
+    </div>
+</header>
+    
+    <body>
+        <!-- <div><a class="back-to-home" href="homepage.html"><button class="back-to-home">Back to home</button></a></div> -->
+        <h1> Simple Payroll Web Application</h1>
+        <Fieldset>
+            <legend><h2>Form</h2></legend>
+            
+            <form id="form" autocomplete="off">
+                <div class="left">
+                    <label for="">Employee ID</label>
+                    <input type="text" name="employeeid" id="employeeid">
+                </div>
+                <div class="left">
+                    <label for="">Fullname</label>
+                    <input type="text" name="fullname" id="fullname">
+                </div>
+                <div class="left">
+                    <label for="">Department</label>
+                    <input type="text" name="department" id="department">
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div class="left">
+                    <label for="">Address</label>
+                    <input type="text" name="address" id="address">
+                </div>
+                <div class="left">
+                    <label for="">Basic Salary</label>
+                    <input type="number" name="basicsalary" id="basicsalary">
+                </div>
+                <div class="left">
+                    <label for="">Total Allowances</label>
+                    <input type="number" name="totalallowance" id="totalallowance" readonly>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div class="left">
+                    <label for="">Netpay</label>
+                    <input type="number" name="netpay" id="netpay" readonly>
+                </div>
+                <div class="left">
+                    <label for="">Tax</label>
+                    <input type="number" name="tax" id="tax" readonly>
+                </div>
+                <div class="left">
+                    <label for="">Grosspay</label>
+                    <input type="number" name="grosspay" id="grosspay" readonly>
+                </div>
+                <div style="clear: both;">&nbsp;</div>
+                <div  class="left" class="form-action-button">
+                    <input type="submit" value="Submit" id="submit">
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Calculate" id="calculate">
+            
+                </div>
+            </form>
+        </Fieldset><br>
+            <div id="msg"></div><br>
+
+        <fieldset>
+            <legend>
+                <h2>Table: Showing Data from Form</h2>
+            </legend>
+            <table class="" id="table">
+                <thead>
+                    <tr>
+                    <th class="col"> Employee Id</th>
+                    <th class="col"> Fullname</th>
+                    <th class="col"> Department </th>
+                    <th class="col"> Address</th>
+                    <th class="col"> Basic Salary</th>
+                    <th class="col"> Total Allowance</th>
+                    <th class="col"> Netpay</th>
+                    <th class="col"> Tax</th>
+                    <th class="col"> Grosspay</th>
+                    <th class="col">Action </th>
+                </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+                </table>
+        </fieldset>
+        <!-- &#8592; -->
+    
+    <script src="script.js"></script>
+    </body>
+    
+
+</html>

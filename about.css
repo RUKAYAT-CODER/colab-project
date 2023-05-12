@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    /* background-color:rgb(105, 145, 231); */
+    width: 90vw;
+    height: 100vh;
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 18px;
+    line-height: 1.3;
+    font-family: Arial, Helvetica, sans-serif;
+    /* overflow-y: scroll; */
+}
+h1{
+    color: rgb(0, 45, 128);
+    font-weight: 900;
+    text-align: center;
+    padding: 5px 80px;
+    font-size: 40px;
+}
+h3{
+   color: rgb(0, 45, 128);
+   padding: 10px 0; 
+}
+h2{
+   color: rgb(0, 45, 128);;
+   text-align: center; 
+   font-weight: 800;
+}
+.about-image img{
+width: 100%;
+
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 85px;
+    background-color: rgb(105, 145, 231);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid rgb(233, 220, 193);
+}
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+     display: inline;
+     flex-direction: row;
+     padding-right: 15px;
+     font-size: 16px;
+} 
+.logo img{
+    width:25%
+}
+li a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+div a{
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* footer */
+footer p{
+    font-size: 16px;
+    margin-left: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(123, 124, 126);
+    height: 180px;
+    width: 100vw;
+    margin-left: -60px;
+    margin-right: -150px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.footer-nav ul{
+   display: flex;
+   margin: 10px;
+   justify-content: space-around;
+     
+
+}
+footer ul li {
+    list-style: none;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.socials ul li{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.socials1{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 40px;
+}
+.socials1 img{
+    width: 30px;    
+
+}
+.copyright{
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+

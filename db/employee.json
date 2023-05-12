@@ -1,0 +1,55 @@
+[
+        {"employeeid" : "kd1",
+        "fullname" : "Mohammed Salisu",
+        "department" : "logistics",
+        "address": "Kawo Kaduna"
+        }, 
+        {"employeeid" : "kd002",
+        "fullname" : "Chukuwma Balarebe",
+        "department" : "finance",
+        "address": "Kachia Kaduna"
+        }, 
+        {"employeeid" : "kd101",
+        "fullname" : "Ayola Taiwo",
+        "department" : "medicals",
+        "address": "Malali Kaduna"
+        }, 
+        {"employeeid" : "kd202",
+        "fullname" : "Chukuwma Kantok",
+        "department" : "finance",
+        "address": "Barnawa Kaduna"
+        }, 
+        {"employeeid" : "kd11",
+        "fullname" : "Ahmed Bola",
+        "department" : "Marketing",
+        "address": "KawKakurio Kaduna"
+        }, 
+        {"employeeid" : "kd22",
+        "fullname" : "Adama Yusuf",
+        "department" : "sales",
+        "address": "Kachia Kaduna"
+        }, 
+        {"employeeid" : "kd151",
+        "fullname" : "Babalola ige",
+        "department" : "medicals",
+        "address": "Malali Kaduna"
+        }, 
+        {"employeeid" : "kd19",
+        "fullname" : "Kunle Smart",
+        "department" : "Training",
+        "address": "Barnawa Kaduna"
+        }, 
+        {"employeeid" : "kd151",
+        "fullname" : "Babalola ige",
+        "department" : "medicals",
+        "address": "Malali Kaduna"
+        }, 
+        {"employeeid" : "kd119",
+        "fullname" : "Emmy Kaka",
+        "department" : "account",
+        "address": "Narayi Kaduna"
+        } 
+        
+
+]
+    
