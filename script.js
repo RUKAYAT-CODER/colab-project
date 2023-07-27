@@ -1,12 +1,14 @@
 const form = document.getElementById("form");
 const submitForm = document.getElementById("submit");
-const totalallowance = document.getElementById("totalallowance").value;
-const salaryInput = document.getElementById("basicsalary").value;
-const netpayInput = document.getElementById("netpay").value;
-const grosspayInput = document.getElementById("grosspay").value;
+const totalallowance = document.getElementById("totalallowance").value
+const salaryInput = document.getElementById("basicsalary").value
+const netpayInput = document.getElementById("netpay")
+const grosspayInput = document.getElementById("grosspay")
 const calculateBtn = document.getElementById("calculate");
 const tbody = document.getElementById("tbody");
 let row = null;
+
+
 
 
 submitForm.addEventListener("click", (e) => {
@@ -207,7 +209,7 @@ function generateTable(readData) {
         buttonEdit.style.padding = "10px"
         buttonEdit.style.borderRadius = "8px"
         buttonEdit.style.border = "1px solid rgb(0, 45, 128)"
-        buttonEdit.style.color ="rgb(0, 45, 128)"
+        buttonEdit.style.color ="ash"
     
         let buttonDelete = document.createElement('button')
         buttonDelete.innerHTML = 'Delete'
@@ -217,9 +219,10 @@ function generateTable(readData) {
         buttonDelete.style.padding = "10px"
         buttonDelete.style.borderRadius = "8px"
         buttonDelete.style.border = "1px solid rgb(0, 45, 128)"
-        buttonDelete.style.color ="rgb(0, 45, 128)"
+        buttonDelete.style.color ="ash"
         tbody.appendChild(row)
         
         
     }
 }
+

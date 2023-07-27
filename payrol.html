@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Payroll System</title>
     <link rel="stylesheet" href="payrol.css">
+    <link rel="stylesheet" href="index.css">
 </head>
-<header>
-    <div class="logo">
-        <img src="/images/Group 1.png" alt="Company logo">
-    </div>
-    <div class="nav-menu">
-        <ul>
-            <li><a href="#index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="payrol.html">Payroll</a></li>
-            <li><a href="contactus.html">Contact Us</a> </li>
-        </ul>
-    </div>
-</header>
-    
-    <body>
-        <!-- <div><a class="back-to-home" href="homepage.html"><button class="back-to-home">Back to home</button></a></div> -->
+<body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="/images/Group 1.png" alt="" width="70px">
+                </div>
+                <nav>
+                    <ul id="menuitems">
+                        <li><a href="#index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="payrol.html">Payroll</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                    <img src="/images/menu.png" alt="" class="menu-icon" onclick="menuToggle()">
+                </nav>
+            </div>
+           
+        </div>
+<div class="container">
         <h1> Simple Payroll Web Application</h1>
         <Fieldset>
-            <legend><h2>Form</h2></legend>
-            
+            <legend>
+                <h2>Form</h2>
+            </legend>
+        
             <form id="form" autocomplete="off">
                 <div class="left">
                     <label for="">Employee ID</label>
@@ -47,7 +53,7 @@
                 </div>
                 <div class="left">
                     <label for="">Basic Salary</label>
-                    <input type="number" name="basicsalary" id="basicsalary">
+                    <input type="text" name="basicsalary" id="basicsalary" oninput="this.value = this.value.replace(/[^0-9.]/g,'');this.value =this.value.replace(/(\..*)\./g, '$1');">
                 </div>
                 <div class="left">
                     <label for="">Total Allowances</label>
@@ -67,16 +73,16 @@
                     <input type="number" name="grosspay" id="grosspay" readonly>
                 </div>
                 <div style="clear: both;">&nbsp;</div>
-                <div  class="left" class="form-action-button">
+                <div class="left" class="form-action-button">
                     <input type="submit" value="Submit" id="submit">
                     <input type="reset" value="Reset">
                     <input type="submit" value="Calculate" id="calculate">
-            
+        
                 </div>
             </form>
         </Fieldset><br>
-            <div id="msg"></div><br>
-
+        <div id="msg"></div><br>
+        
         <fieldset>
             <legend>
                 <h2>Table: Showing Data from Form</h2>
@@ -84,23 +90,36 @@
             <table class="" id="table">
                 <thead>
                     <tr>
-                    <th class="col"> Employee Id</th>
-                    <th class="col"> Fullname</th>
-                    <th class="col"> Department </th>
-                    <th class="col"> Address</th>
-                    <th class="col"> Basic Salary</th>
-                    <th class="col"> Total Allowance</th>
-                    <th class="col"> Netpay</th>
-                    <th class="col"> Tax</th>
-                    <th class="col"> Grosspay</th>
-                    <th class="col">Action </th>
-                </tr>
+                        <th class="col"> Employee Id</th>
+                        <th class="col"> Fullname</th>
+                        <th class="col"> Department </th>
+                        <th class="col"> Address</th>
+                        <th class="col"> Basic Salary</th>
+                        <th class="col"> Total Allowance</th>
+                        <th class="col"> Netpay</th>
+                        <th class="col"> Tax</th>
+                        <th class="col"> Grosspay</th>
+                        <th class="col">Action </th>
+                    </tr>
                 </thead>
                 <tbody id="tbody"></tbody>
-                </table>
+            </table>
         </fieldset>
+</div>
         <!-- &#8592; -->
-    
+        <script>
+            const menuItems = document.getElementById('menuitems');
+            menuItems.style.maxHeight = "0px";
+            function menuToggle() {
+                if (menuItems.style.maxHeight == "0px") {
+                    menuItems.style.maxHeight = "200px"
+                }
+                else {
+                    menuItems.style.maxHeight = "0px"
+                }
+            }
+
+        </script>
     <script src="script.js"></script>
     </body>
     

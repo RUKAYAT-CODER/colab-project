@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+        }
+        .input{
+            text-align: center;
+            margin: 100px 0;
+        }
+        input[type="text"]{
+            height: 50px;
+            width: 600px;
+            background: #e7e7e7;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: sans-serif;
+            border-radius: 2px;
+            border: none;   
+            padding:10px 10px;
+        }
+        input[type="submit"]{
+            height: 50px;
+            width: 100px;
+            background: #e7e7e7;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: sans-serif;
+            border-radius: 2px;
+            border: none;
+        }
+        .display{
+            text-align: center;
+        }
+       
+    </style>
+</head>
+<body>
+        <div class="input">
+            <input type="text" name="" id="" placeholder="Enter the city" class="input">
+            <input type="submit" value="Submit" class="button">
+        </div>
+        <div class="display">
+           <h1 class="name"></h1>
+           <p class="desc"></p>
+           <p class="temp"></p>
+        </div>
+    <script>
+        const button = document.querySelector('.button');
+        const input = document.querySelector('.input');
+        const name = document.querySelector('.name');
+        const desc = document.querySelector('.desc');
+        const temp = document.querySelector('.temp');
+        
+        button.addEventListener("click",function(){                                 
+            // fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=fee5f8009f1f36552daf65cfa1df3fd3')
+                // fetch('http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={API key}')
+                fetch('http://api.openweathermap.org/geo/1.0/direct?q='+input.value+'&limit=5&appid={fee5f8009f1f36552daf65cfa1df3fd3}')
+                .then(response => response.json())
+                .then(data => {
+                    let nameValue = data['name'];
+                    let TempValue = data['main']['temp'];
+                    let Descvalue =data['weather']['0']['description'];
+
+                    name.innerHTml = nameValue
+                    temp.innerHTML = TempValue
+                    desc.innerHTML =Descvalue
+
+
+                })
+
+                .catch(err => alert("Wrong city name!"))
+        })
+        
+    </script>
+</body>
+</html>

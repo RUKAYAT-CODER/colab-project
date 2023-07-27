@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Simple Payroll System</title>
+</head>
+<body>
+    <div class="navigation" >
+        <a href="#"><img src="/images/Group 1.png" alt="Company logo" class="logo right"></a>
+        <div class="topnav" id="myTopnav">
+            <a href="#indx.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="payrol.html">Payroll</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+   
+    <div class="mainBody">
+        <h1>Tired of Payroll Headache?</h1>
+        <h2>Lets handle it for you! The smartest way</h2>
+        <p>
+            Our payroll system is designed to simplify the complex and time-consuming task of managing employee payroll and
+            has alot of
+            benefits. With our easy-to-use system, you can manage your payroll and employee information from anywhere,
+            at anytime. </p>
+    </div>
+    <script>
+        function myFunction(){
+            let myTopNav = document.getElementById("myTopnav")
+            if (myTopNav.className === "topnav"){
+                myTopNav.className += " responsive";
+            }else{
+                myTopNav.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>
